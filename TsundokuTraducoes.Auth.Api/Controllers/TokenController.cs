@@ -13,7 +13,7 @@ public class TokenController : ControllerBase
         _tokenAppService = tokenAppService;
     }
         
-    [HttpGet("api/refresh-token")]
+    [HttpGet("refresh-token")]
     public async Task<IActionResult> RefreshToken()
     {
         var refreshToken = Request.Cookies["tsun_refresh_token"];
